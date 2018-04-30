@@ -15,7 +15,7 @@ class String
   end
 
   def count_sentences
-    elements = self.split(/[?!.]/)
+    elements = self.split(/[[:punct:]]\s/)
     elements.count
   end
 end
